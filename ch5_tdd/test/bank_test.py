@@ -1,32 +1,33 @@
 import unittest
+
 from ch5_tdd.account import Account
 from ch5_tdd.bank import Bank
 
 
 class MyTestCase(unittest.TestCase):
+    def setUp(self):
+        self.bank = Bank()
+
     def test_bank_is_initially_empty(self):
-        bank = Bank()
-        self.assertEqual({}, bank.accounts)
-        self.assertEqual(len(bank.accounts), 0)
+        self.assertEqual({}, self.bank.accounts)
+        self.assertEqual(len(self.bank.accounts), 0)
 
     def test_add_account(self):
-        bank = Bank()
         account_1 = Account(001, 50)
         account_2 = Account(002, 100)
 
-        bank.add_account(account_1)
-        bank.add_account(account_2)
+        self.bank.add_account(account_1)
+        self.bank.add_account(account_2)
 
-        self.assertEqual(len(bank.accounts), 2)
+        self.assertEqual(len(self.bank.accounts), 2)
 
     def test_get_account_balance(self):
-        bank=Bank()
-
         account_1 = Account(001, 50)
 
-        bank.add_account(account_1)
+        self.bank.add_account(account_1)
 
-        self.assertEqual(bank.get_account_balance(001), 50)
+        self.assertEqual(self.bank.get_account_balance(001), 50)
+
 
 if __name__ == '__main__':
     unittest.main()
