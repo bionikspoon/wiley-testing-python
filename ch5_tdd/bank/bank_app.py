@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-from bank.bank import Bank
+from bank import Bank
 
 
 app = Flask(__name__)

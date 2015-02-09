@@ -1,5 +1,4 @@
 import unittest
-
 from ch5_tdd.bank.account import Account
 from ch5_tdd.bank.bank import Bank
 
