@@ -1,0 +1,143 @@
+************* Module ch5_tdd.src
+src\__init__.py:1:[C0111(missing-docstring), ] Missing module docstring
+************* Module ch5_tdd.src.account
+src\account.py:4:[C0304(missing-final-newline), ] Final newline missing
+src\account.py:1:[C0111(missing-docstring), ] Missing module docstring
+src\account.py:1:[C0111(missing-docstring), Account] Missing class docstring
+src\account.py:1:[R0903(too-few-public-methods), Account] Too few public methods (0/2)
+************* Module ch5_tdd.src.bank
+src\bank.py:9:[C0304(missing-final-newline), ] Final newline missing
+src\bank.py:1:[C0111(missing-docstring), ] Missing module docstring
+src\bank.py:1:[C0111(missing-docstring), Bank] Missing class docstring
+src\bank.py:5:[C0111(missing-docstring), Bank.add_account] Missing method docstring
+src\bank.py:8:[C0111(missing-docstring), Bank.get_account_balance] Missing method docstring
+************* Module ch5_tdd.src.bank_app
+src\bank_app.py:1:[C0111(missing-docstring), ] Missing module docstring
+src\bank_app.py:3:[W0403(relative-import), ] Relative import 'bank', should be 'ch5_tdd.src.bank'
+src\bank_app.py:5:[C0103(invalid-name), ] Invalid constant name "app"
+src\bank_app.py:10:[C0111(missing-docstring), hell_world] Missing function docstring
+************* Module ch5_tdd.src.templates
+src\templates\__init__.py:1:[C0111(missing-docstring), ] Missing module docstring
+
+
+Report
+======
+22 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |5      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |2      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|method   |4      |NC         |NC         |50.00       |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|function |1      |NC         |NC         |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    ch5_tdd 
+      \-src 
+        \-bank (ch5_tdd.src.bank_app)
+    flask (ch5_tdd.src.bank_app)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |25     |73.53 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |NC       |NC         |
++----------+-------+------+---------+-----------+
+|comment   |4      |11.76 |NC       |NC         |
++----------+-------+------+---------+-----------+
+|empty     |5      |14.71 |NC       |NC         |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |NC       |NC         |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |NC       |NC         |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |13     |NC       |NC         |
++-----------+-------+---------+-----------+
+|refactor   |1      |NC       |NC         |
++-----------+-------+---------+-----------+
+|warning    |1      |NC       |NC         |
++-----------+-------+---------+-----------+
+|error      |0      |NC       |NC         |
++-----------+-------+---------+-----------+
+
+
+
+% errors / warnings by module
+-----------------------------
+
++-------------------------------+------+--------+---------+-----------+
+|module                         |error |warning |refactor |convention |
++===============================+======+========+=========+===========+
+|ch5_tdd.src.bank_app           |0.00  |100.00  |0.00     |23.08      |
++-------------------------------+------+--------+---------+-----------+
+|ch5_tdd.src.account            |0.00  |0.00    |100.00   |23.08      |
++-------------------------------+------+--------+---------+-----------+
+|ch5_tdd.src.bank               |0.00  |0.00    |0.00     |38.46      |
++-------------------------------+------+--------+---------+-----------+
+|ch5_tdd.src.templates.__init__ |0.00  |0.00    |0.00     |7.69       |
++-------------------------------+------+--------+---------+-----------+
+|ch5_tdd.src                    |0.00  |0.00    |0.00     |7.69       |
++-------------------------------+------+--------+---------+-----------+
+
+
+
+Messages
+--------
+
++-----------------------+------------+
+|message id             |occurrences |
++=======================+============+
+|missing-docstring      |10          |
++-----------------------+------------+
+|missing-final-newline  |2           |
++-----------------------+------------+
+|too-few-public-methods |1           |
++-----------------------+------------+
+|relative-import        |1           |
++-----------------------+------------+
+|invalid-name           |1           |
++-----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 3.18/10
+

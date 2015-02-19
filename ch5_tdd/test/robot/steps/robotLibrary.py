@@ -1,8 +1,8 @@
 from nose.tools import assert_equal, assert_in
 from webtest import TestApp
 
-from ch5_tdd.bank.account import Account
-from ch5_tdd.bank.bank_app import app, BANK
+from ch5_tdd.src.account import Account
+from ch5_tdd.src.bank_app import app, BANK
 
 
 class robotLibrary(object):
